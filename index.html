@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #84a6e9;
+        }
+         header {
+            background-color: #e40a0ab7;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; 
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+         .profile-picture {
+            width: 100px; 
+            height: 100px;
+            border-radius: 75%; 
+            object-fit: cover; 
+            position: absolute; 
+            top: 75px; 
+            left: 75px; 
+        }
+   
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align:center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1289b8;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="lakshmi.img.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>LAKSHMI A </h1>
+            <p>I Am BCA student</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
+        
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm Lakshmi, a student pursuing BCA. I'm passionate about technology and innovation, and I'm excited
+                to learn and grow in this field. With a strong foundation in computer science, I'm confident in my
+                ability to adapt to new technologies and challenges. I'm a quick learner, and I thrive in 
+                environments where I can collaborate with others and share ideas. My goal is to leverage my skills
+                and knowledge to make a positive impact in this world. My hobbies are book reading and listening to songs.</p>
+
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p> Computer Application (BCA) (2024-2027) </p>
+            <p>Madras University </p>
+            
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>java</li>
+                <li>c++</li>
+                <li>Java script</li>
+            </ul>
+        </div>
+    </section><section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Python Game Project</h3>
+                <p>I devoleped a simple python-based game using the <strong>Pygame</strong>library.
+                   The game is intractive and user-friendly,desinged to enhance logical thinking and problem-solving skills.
+                   It was a fun way to apply programming concepts like loop, conditions, and event handling.</p>
+                <p><strong>Technologies Used:</strong> Python, Pygame</p>
+                <a href="https://github.com/yourusername/python-game" target="_blank">View Code</a>  
+            </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2>Contact</h2>
+            <form>
+                <input type="text"
+        placeholder="your Name" required>
+                 <input type="email"
+        placeholder="your Email" required>
+                  <textarea rows="5" 
+        placeholder="your message"></textarea>
+                   <button type=" submit ">send message</button>
+            </form>
+           
+        </div>
+    </section>
+    <section id="resume">
+        <div class="section-content">
+            <h2>Resume</h2>
+            <p>You can download my resume by clicking the button below:</p>
+            <a href="LAKSHMI A.docx" download class="download-button">Download Resume</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 lakshmi </p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
